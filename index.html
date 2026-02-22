@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PT. SANCA MANDIRI ENGINEERING</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0f172a;
+    color:#fff;
+}
+
+/* NAVBAR */
+nav{
+    position:fixed;
+    width:100%;
+    padding:20px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(0,0,0,0.6);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+nav h1{
+    font-size:18px;
+    letter-spacing:1px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#ff3b3b;
+}
+
+/* HERO VIDEO */
+#home{
+    position:relative;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    overflow:hidden;
+}
+
+#home video{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    z-index:-1;
+}
+
+.hero-content h2{
+    font-size:48px;
+    font-weight:700;
+    margin-bottom:20px;
+    animation:fadeDown 1.5s ease;
+}
+
+.hero-content p{
+    font-size:20px;
+    margin-bottom:30px;
+    animation:fadeUp 2s ease;
+}
+
+.button{
+    padding:14px 30px;
+    background:#ff3b3b;
+    border:none;
+    color:white;
+    font-weight:600;
+    text-decoration:none;
+    border-radius:30px;
+    transition:0.3s;
+}
+
+.button:hover{
+    background:white;
+    color:#ff3b3b;
+}
+
+/* SECTION */
+section{
+    padding:120px 10%;
+}
+
+.section-title{
+    font-size:36px;
+    margin-bottom:40px;
+    text-align:center;
+    color:#ff3b3b;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#1e293b;
+    padding:30px;
+    border-radius:15px;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    background:#334155;
+}
+
+/* ANIMATION */
+@keyframes fadeDown{
+    from{opacity:0;transform:translateY(-50px);}
+    to{opacity:1;transform:translateY(0);}
+}
+
+@keyframes fadeUp{
+    from{opacity:0;transform:translateY(50px);}
+    to{opacity:1;transform:translateY(0);}
+}
+
+/* FOOTER */
+footer{
+    background:#020617;
+    padding:40px;
+    text-align:center;
+    font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<h1>PT. SANCA MANDIRI ENGINEERING</h1>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<!-- HERO -->
+<section id="home">
+<video autoplay muted loop>
+<source src="https://cdn.coverr.co/videos/coverr-working-on-a-construction-site-5171/1080p.mp4" type="video/mp4">
+</video>
+
+<div class="hero-content">
+<h2>Mechanical • Engineering • Construction</h2>
+<p>SAFETY FIRST | QUALITY ALWAYS | ON TIME DELIVERY</p>
+<a href="#contact" class="button">CONTACT US</a>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+<h2 class="section-title">About Company</h2>
+<p style="text-align:center; max-width:800px; margin:auto;">
+PT. SANCA MANDIRI ENGINEERING is a professional engineering company specializing in Mechanical Installation, Fabrication, Maintenance, and Construction services with strong commitment to safety and quality.
+</p>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+<h2 class="section-title">Our Services</h2>
+<div class="grid">
+<div class="card">Mechanical Installation</div>
+<div class="card">Steel Structure Fabrication</div>
+<div class="card">Maintenance & Shutdown</div>
+<div class="card">HVAC Installation</div>
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+<h2 class="section-title">Project Experience</h2>
+<div class="grid">
+<div class="card">Factory Installation Project</div>
+<div class="card">Commercial HVAC System</div>
+<div class="card">Mechanical Overhaul</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2 class="section-title">Contact Us</h2>
+<p style="text-align:center;">
+Email: info@sancamandiri.co.id <br><br>
+Phone: +62 8XXXXXXXXXX
+</p>
+<div style="text-align:center; margin-top:30px;">
+<a href="https://wa.me/628XXXXXXXXXX" class="button">Chat via WhatsApp</a>
+</div>
+</section>
+
+<footer>
+© 2026 PT. SANCA MANDIRI ENGINEERING | All Rights Reserved
+</footer>
+
+</body>
+</html>
